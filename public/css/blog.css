@@ -35,7 +35,7 @@
     border-radius: 0.25rem;
     display: inline-block;
     position: relative;
-    /* prevents padding from adding to the width */
+    /* prevent padding from adding to the width */
     box-sizing: border-box;
     z-index: 1;
     transition: color .3s;
@@ -325,7 +325,7 @@
     border-radius: 0.25rem;
     display: inline-block;
     position: relative;
-    /* prevents padding from adding to the width */
+    /* prevent padding from adding to the width */
     box-sizing: border-box;
     z-index: 1;
     transition: color .3s;

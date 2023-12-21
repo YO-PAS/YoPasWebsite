@@ -200,7 +200,7 @@ However, how do we set dynamic active states to show which page you're on? Here'
         <li><a class="{{ 'active' if '' == page.url }}" href="/">Home</a></li>
         <li><a class="{{ 'active' if 'about' == page.url }}" href="/about">About Us</a></li>
         <li><a class="{{ 'active' if 'projects' == page.url }}" href="/projects">Projects</a></li>
-        <li><a class="{{ 'active' if 'Events' == page.url }}" href="/Events">Events</a></li>
+        <li><a class="{{ 'active' if 'event' == page.url }}" href="/event">event</a></li>
         <li><a class="{{ 'active' if 'blog' == page.url }}" href="/blog">Blog</a></li>
         <li><a class="{{ 'active' if 'contact' == page.url }}" href="/contact">Contact</a></li>
     </ul>

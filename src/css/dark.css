@@ -65,7 +65,7 @@
     transform: translate(-50%, -50%);
     width: 1.5625rem;
     height: 1.5625rem;
-    pointer-events: none;
+    pointer-event: none;
   }
   #dark-mode-toggle .moon {
     z-index: 2;
