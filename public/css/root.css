@@ -4,12 +4,15 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   :root {
-    --primary: #FFBA19;
+    --primary: #478AC9;
     --primaryShade: #ffd675;
     --primaryDark: #805d0d;
     --bodyTextColor: #4E4B66;
     --bodyTextColorWhite: #FAFBFC;
     --headerColor: #1a1a1a;
+    --yellowColor: #FFFF00;
+
+   
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -94,8 +97,7 @@
   }
   .button-solid {
     font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-weight: lighter;
     text-decoration: none;
     display: inline-block;
     width: auto;
@@ -307,13 +309,12 @@
   }
   #navigation #navbar-menu ul li a {
     text-decoration: none;
-    text-transform: uppercase;
     color: #000;
     font-size: 1.1875rem;
     text-align: center;
     display: inline-block;
     position: relative;
-    font-weight: bold;
+    font-weight: lighter;
   }
   #navigation #navbar-menu ul li a.active:before {
     content: '';
@@ -423,10 +424,9 @@
   }
   #navigation #navbar-menu ul li a {
     text-decoration: none;
-    font-weight: bold;
+    font-weight: lighter;
     /* 14px - 18px */
     font-size: clamp(0.875rem, 1.5vw, 1.125rem);
-    text-transform: uppercase;
     position: relative;
     z-index: 1;
     color: #fff;
@@ -438,7 +438,7 @@
     display: block;
     height: 0.375rem;
     border-radius: 0.1875rem;
-    background: var(--primary);
+    background: var( --yellowColor);
     opacity: 1;
     bottom: 0.125rem;
     z-index: -1;
@@ -455,7 +455,7 @@
     display: block;
     width: 100%;
     height: 0.375rem;
-    background: var(--primary);
+    background: var( --yellowColor);
     opacity: 1;
     bottom: 0.125rem;
     border-radius: 0.1875rem;
@@ -689,15 +689,14 @@
     transition: color .3s;
   }
   #footer .right-section .lists ul li a:hover {
-    color: var(--primary);
+    color: var( --yellowColor);
   }
   #footer .right-section .lists ul h2 {
     color: #fff;
     font-size: 1.125rem;
     line-height: 1.16666667em;
     margin-bottom: 2.3125rem;
-    text-transform: uppercase;
-    font-weight: bold;
+    font-weight: lighter;
     position: relative;
   }
   #footer .right-section .lists ul h2:before {
@@ -706,7 +705,7 @@
     display: block;
     height: 0.125rem;
     width: 6.0625rem;
-    background: var(--primary);
+    background: var( --yellowColor);
     opacity: 1;
     bottom: -1rem;
     left: 0;
@@ -731,7 +730,7 @@
     font-size: 1rem;
   }
   #footer .credit a {
-    color: var(--primary);
+    color: var( --yellowColor);
     text-decoration: none;
     font-size: 1rem;
   }
