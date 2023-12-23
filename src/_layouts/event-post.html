@@ -51,12 +51,13 @@ eleventyComputed:
             </div>
             <section id="blog-content">
                 {{ content | safe }}
+            
+                <a href="{{ buyTicketButton }}" class="buy-ticket-button">Buy Ticket</a>
+           
             </section>
 
             <!-- Buy Ticket Button -->
-            {% if buyTicketButton %}
-                <a href="{{ buyTicketButton }}" class="buy-ticket-button">Buy Ticket</a>
-            {% endif %}
+          
         </article>
     </div>
     <!-- End .main-content -->
