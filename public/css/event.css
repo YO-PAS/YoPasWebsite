@@ -808,17 +808,20 @@
 }
 
 /* Add this CSS for the Buy Ticket button */
+/* Add this CSS for the Buy Ticket button */
 .buy-ticket-button {
   display: inline-block;
   padding: 10px 20px;
   background-color: #3498db; /* Choose your desired background color */
-  color: #fff; /* Choose your desired text color */
+  color: yellow; /* Choose your desired text color */
   text-decoration: none;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add color transition */
 }
 
 .buy-ticket-button:hover {
-  background-color: #2980b9; /* Choose a slightly different color for the hover effect */
+  background-color: yellow; /* Choose a slightly different color for the hover effect */
+  color: black; /* Set the text color to black on hover */
 }
+
 
