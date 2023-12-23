@@ -7,9 +7,8 @@ eleventyComputed:
     tagTitle: '{{ titleTag }}'
     preloadImg: '{{ image }}'
     permalink: '/event/{{ pageName | slug }}/index.html'
-    buyTicketLink: '{{ buyTicketLink }}'
+    buyTicketLink: '{{ buyTicketLink }}'  <!-- Corrected variable name -->
     buttonTextColor: 'yellow'
-
 ---
 
 <!-- ============================================ -->
@@ -54,7 +53,7 @@ eleventyComputed:
             <section id="blog-content">
                 {{ content | safe }}
             
-                <a href="{{ buyTicketButton }}" class="buy-ticket-button" style="color: {{ buttonTextColor }}">Buy Ticket</a>
+                <a href="{{ buyTicketLink }}" class="buy-ticket-button" style="color: {{ buttonTextColor }}">Buy Ticket</a>
            
             </section>
 
