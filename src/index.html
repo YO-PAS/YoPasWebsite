@@ -38,7 +38,7 @@ eleventyNavigation:
   </div>
 
   <!-- Background Image -->
-  {% image './src/images/landing.jpg', 'mountains', 'cs-picture', 'eager', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+  {% image './src/images/bg_3.jpg', 'yopasTeam', 'cs-picture', 'eager', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
 </section>
 
 <!-- ============================================ -->
@@ -99,8 +99,8 @@ eleventyNavigation:
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-left">
-      {% image './src/images/cabinets2.jpg', 'house', 'cs-picture cs-picture1', 'lazy'%}
-      {% image './src/images/construction.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%}
+      {% image './src/images/ph1.jpg', 'house', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/bg_3.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%}
     </div>
     <!-- Right Content Section-->
     <div class="cs-right">
@@ -142,33 +142,6 @@ eleventyNavigation:
 <!--            Extra Content To Rank             -->
 <!-- ============================================ -->
 
-<section id="sbs-r">
-  <div class="cs-container">
-    <!-- Left Image Section -->
-    <div class="cs-left">
-      {% image './src/images/construction.jpg', 'house', 'cs-picture cs-picture1', 'lazy'%}
-      {% image './src/images/cabinets2.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%}
-    </div>
-    <!-- Right Content Section-->
-    <div class="cs-right">
-      <span class="cs-topper">SEO Ranking</span>
-      <h2 class="cs-title">Talk about a main service keyword</h2>
-      <p class="cs-text">
-        In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis
-        libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei
-        aptent taciti sociosqu ad litora torquent per.
-      </p>
-      <p class="cs-text">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur, iure nihil ipsam qui atque commodi id
-        voluptatem nesciunt, quis animi fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores ullam.
-        Consequuntur debitis a voluptatibus vitae optio autem explicabo quia neque est quas, in placeat. Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Doloribus modi laudantium voluptatibus rem libero error minus quia
-        eligendi sapiente eos.
-      </p>
-      <a href="" class="button-solid">Learn More About Thing</a>
-    </div>
-  </div>
-</section>
 
 <!-- ============================================ -->
 <!--                   Gallery                    -->
@@ -218,7 +191,7 @@ eleventyNavigation:
     </p>
    
        
-    <a aria-label="read more event" href="/blog" class="button-solid">See Events</a>
+    <a aria-label="read more event" href="/event" class="button-solid">See Events</a>
   </div>
 </section>
 <!-- ============================================ -->
@@ -228,16 +201,14 @@ eleventyNavigation:
 <section id="cta">
   <div class="container">
     <h2 class="title">
-      Get It Done <br/>
-      With Us Today
+      Looking to Connect with Us?<br/>
     </h2>
     <p>
-      Say something catchy, informative, and encouraging to click the button to go to the contact page. I like to add
-      these to the bottom of all pages.
+      Discover how we can assist you! Our team is eager to hear from you. Click below and head to our contact page for a personalized experience.
     </p>
-    <a href="/contact" class="button-solid">Get an Estimate Now</a>
+    <a href="/contact" class="button-solid">Start Your Conversation</a>
   </div>
-  {% image './src/images/cabinets2.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+  {% image './src/images/WhatsApp Image 2023-11-08 at 4.14.32 PM.jpeg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
 </section>
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -256,3 +227,26 @@ eleventyNavigation:
       });
   }
 </script>
+
+<!-- ============================================ -->
+<!--                 Partners                    -->
+<!-- ============================================ -->
+
+<section id="partners">
+  <div class="container">
+    <span class="cs-topper">Our Partners</span>
+    <div class="cs-partner-logos">
+      <!-- Logo for MTN -->
+      <img src="path/to/mtn-logo.png" alt="MTN Logo" class="cs-partner-logo">
+      
+      <!-- Logo for Airtel -->
+      <img src="path/to/airtel-logo.png" alt="Airtel Logo" class="cs-partner-logo">
+      
+      <!-- Logo for GT Bank -->
+      <img src="path/to/gt-bank-logo.png" alt="GT Bank Logo" class="cs-partner-logo">
+      
+      <!-- Logo for Uganda Manufacturers Association -->
+      <img src="path/to/uma-logo.png" alt="UMA Logo" class="cs-partner-logo">
+    </div>
+  </div>
+</section>
