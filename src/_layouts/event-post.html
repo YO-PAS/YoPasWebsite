@@ -7,6 +7,7 @@ eleventyComputed:
     tagTitle: '{{ titleTag }}'
     preloadImg: '{{ image }}'
     permalink: '/event/{{ pageName | slug }}/index.html'
+    buyTicketButton: '{{ buyTicketButton }}'
 ---
 
 <!-- ============================================ -->
@@ -40,13 +41,7 @@ eleventyComputed:
                 <div class="blog-authorGroup">
                     <!--Author Image-->
                     <picture class="blog-author-img">
-                        <img
-            src="/assets/svgs/profile.svg"
-            alt="house"
-            width="32"
-            height="32"
-            decoding="async"
-/>
+                        <img src="/assets/svgs/profile.svg" alt="house" width="32" height="32" decoding="async"/>
                     </picture>
                     <span class="blog-author">{{ author }}</span>
                     <span aria-hidden="true" class="blog-dot"></span>
@@ -57,6 +52,11 @@ eleventyComputed:
             <section id="blog-content">
                 {{ content | safe }}
             </section>
+
+            <!-- Buy Ticket Button -->
+            {% if buyTicketButton %}
+                <a href="{{ buyTicketButton }}" class="buy-ticket-button">Buy Ticket</a>
+            {% endif %}
         </article>
     </div>
     <!-- End .main-content -->
