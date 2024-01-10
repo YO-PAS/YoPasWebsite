@@ -15,7 +15,7 @@
       </picture>
       <div class="content-group">
         <h3 class="feature-h3">{{ event.data.eventTitle }}</h3>
-        <span class="feature-date">{{ event.date | eventDate }}</span>
+        <span class="feature-date">{{ event.date | postDate }}</span>
       </div>
     </a>
     {%- endfor -%}
