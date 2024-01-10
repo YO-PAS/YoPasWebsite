@@ -16,8 +16,9 @@ collections:
     label: 'Event'
     folder: 'src/event'
     create: true
-    slug: "work-{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{pageName}}"
     fields:
+      - { label: 'Page-Name-with-dashes-only', name: 'pageName', widget: 'string' }
       - { label: 'Event Title', name: 'eventTitle', widget: 'string' }
       - { label: 'Title Tag', name: 'titleTag', widget: 'string' }
       - { label: 'Description', name: 'eventDescription', widget: 'string' }
