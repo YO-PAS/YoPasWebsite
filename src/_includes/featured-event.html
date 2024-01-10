@@ -6,16 +6,16 @@
     <a class="blog-feature" href="{{ post.url }}">
       <picture class="blog-featureImage">
         <img
-          src="{{ post.data.image }}"
-          alt="{{ post.data.imageAlt }}"
+          src="{{ event.data.image }}"
+          alt="{{ event.data.imageAlt }}"
           width="60"
           height="60"
           decoding="async"
         />
       </picture>
       <div class="content-group">
-        <h3 class="feature-h3">{{ post.data.blogTitle }}</h3>
-        <span class="feature-date">{{ post.date | postDate }}</span>
+        <h3 class="feature-h3">{{ event.data.eventTitle }}</h3>
+        <span class="feature-date">{{ event.date | eventDate }}</span>
       </div>
     </a>
     {%- endfor -%}

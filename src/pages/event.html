@@ -32,10 +32,10 @@ eleventyNavigation:
         <!--                 Blog Articles                -->
         <!-- ============================================ -->
 
-        {% if collections.post | length == 0 %}
-            <h1>No Recent Posts</h1>
+        {% if collections.event | length == 0 %}
+            <h1>No Recent Eventsls</h1>
         {% endif %}
-        {%- for post in collections.post | reverse -%}
+        {%- for post in collections.event | reverse -%}
             <article class="recent-articles">
                 <!--Main Article Image-->
                 <picture class="blog-mainImage">
@@ -60,18 +60,18 @@ eleventyNavigation:
               decoding="async"
 />
                         </picture>
-                        <span class="blog-author">{{ post.data.author }}</span>
+                        <span class="blog-author">{{ event.data.author }}</span>
                         <span aria-hidden="true" class="blog-dot"></span>
                         <!--Blog Date-->
-                        <span class="blog-date">{{ post.date | postDate }}</span>
+                        <span class="blog-date">{{ event.date | eventDate }}</span>
                     </div>
                     <h2 class="blog-h1">
-                        {{ post.data.eventTitle }}
+                        {{ event.data.eventTitle }}
                     </h2>
                     <p class="blog-desc">
-                        {{ post.data.eventDescription }}
+                        {{ event.data.eventDescription }}
                     </p>
-                    <a href="{{ post.url }}" class="blog-link">More About The Event</a>
+                    <a href="{{ event.url }}" class="blog-link">More About The Event</a>
                 </div>
             </article>
         {%- endfor -%}

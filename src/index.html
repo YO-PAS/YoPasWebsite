@@ -188,9 +188,56 @@ effective ticketing solution for all events.
     <p class="cs-text">
       Forget queues and lost paper stubs, Yopas takes your events to the next level with seamless ticketing magic! Browse a vibrant calendar of concerts, festivals, and workshops happening near you, then snap up your tickets in seconds with secure payments and instant delivery. No more stress, just pure excitement. 
     </p>
-   
-       
-    <a aria-label="read more event" href="/event" class="button-solid">See Events</a>
+    <div class="blog-container main-content-wrapper">
+      <!--Main content -->
+      <div class="main-content">
+        <!-- ============================================ -->
+        <!--                 Events             -->
+        <!-- ============================================ -->
+    
+        {% if collections.event | length == 0 %}
+          <h1>No Recent Events</h1>
+        {% endif %}
+ 
+        {%- for event in collections.event | reverse -%}
+          {% if loop.index0 < 4 %}
+            <article class="recent-articles">
+              <!--Main Article Image-->
+              <picture class="blog-mainImage">
+                <img src="{{ event.data.image }}" alt="{{ event.data.imageAlt }}" width="300" height="350" decoding="async" />
+              </picture>
+              <!--Article Info-->
+              <div class="article-group">
+                <div class="blog-authorGroup">
+                  <!--Author Image-->
+                  <picture class="blog-author-img">
+                    <img src="/assets/svgs/profile.svg" alt="house" width="32" height="32" decoding="async" />
+                  </picture>
+                  <span class="blog-author">{{ event.data.author }}</span>
+                  <span aria-hidden="true" class="blog-dot"></span>
+                  <!--Blog Date-->
+                  <span class="blog-date">{{ event.date | eventDate }}</span>
+                </div>
+                <h2 class="blog-h1">
+                  {{ event.data.eventTitle }}
+                </h2>
+                <p class="blog-desc">
+                  {{ event.data.eventDescription }}
+                </p>
+                <!-- <a href="{{ buyTicketLink }}" class="buy-ticket-button" >Buy Ticket</a> -->
+                <a aria-label="read more event" href="{{ buyTicketLink }}"class="button-solid-thin">Buy Ticket</a>
+
+              </div>
+            </article>
+          {% endif %}
+        {%- endfor -%}
+      </div>
+    </div>
+    
+    
+    
+    
+    <a aria-label="read more event" href="/event" class="button-solid">See More</a>
   </div>
 </section>
 <!-- ============================================ -->
