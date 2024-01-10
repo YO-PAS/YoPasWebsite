@@ -37,7 +37,7 @@ eleventyComputed:
 
             <!--Article Info-->
             <div class="article-group">
-                <h1 class="blog-h1">{{ blogTitle }}</h1>
+                <h1 class="blog-h1">{{ eventTitle }}</h1>
                 <div class="blog-authorGroup">
                     <!--Author Image-->
                     <picture class="blog-author-img">
@@ -46,13 +46,13 @@ eleventyComputed:
                     <span class="blog-author">{{ author }}</span>
                     <span aria-hidden="true" class="blog-dot"></span>
                     <!--Blog Date-->
-                    <span class="blog-date">{{ date | eventDate }}</span>
+                    <span class="blog-date">{{ date | postDate }}</span>
                 </div>
             </div>
             <section id="blog-content">
                 {{ content | safe }}
             
-                <a href="{{ buyTicketLink }}" class="buy-ticket-button" >Buy Ticket</a>
+                <a href="{{ TicketLink }}" class="buy-ticket-button" >Buy Ticket</a>
            
             </section>
 

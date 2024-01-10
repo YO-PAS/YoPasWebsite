@@ -40,8 +40,8 @@ eleventyNavigation:
                 <!--Main Article Image-->
                 <picture class="blog-mainImage">
                     <img
-                        src="{{ post.data.image }}"
-                        alt="{{ post.data.imageAlt }}"
+                        src="{{ event.data.image }}"
+                        alt="{{ event.data.imageAlt }}"
                         width="795"
                         height="400"
                         decoding="async"
@@ -63,7 +63,7 @@ eleventyNavigation:
                         <span class="blog-author">{{ event.data.author }}</span>
                         <span aria-hidden="true" class="blog-dot"></span>
                         <!--Blog Date-->
-                        <span class="blog-date">{{ event.date | eventDate }}</span>
+                        <span class="blog-date">{{ event.date | postDate }}</span>
                     </div>
                     <h2 class="blog-h1">
                         {{ event.data.eventTitle }}
