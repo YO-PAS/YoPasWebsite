@@ -1,14 +1,15 @@
 ---
 pageName: "How to book an event "
-eventTitle: "event booking "
+blogTitle: "How to book an event "
 titleTag: book
 blogDescription: book
 author: mercy
-date: 2023-12-28T16:42:44.957Z
+date: 2024-01-17T16:42:44.957Z
 tags:
   - event
-image: /images/blog/landing.jpg
+image: /images/post/how-to-book-an-event-venue-in-15-steps-1.webp
 imageAlt: image
+eventTitle: "event booking "
 ---
 oin us for an enchanting evening under the stars at the "Enchanted Garden Soiree." Immerse yourself in the magic of a secret garden where twinkling fairy lights, fragrant blossoms, and the soft melody of live music create an atmosphere of pure delight.
 
