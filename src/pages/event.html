@@ -35,7 +35,7 @@ eleventyNavigation:
         {% if collections.event | length == 0 %}
             <h1>No Recent Eventsls</h1>
         {% endif %}
-        {%- for post in collections.event | reverse -%}
+        {%- for event in collections.event | reverse -%}
             <article class="recent-articles">
                 <!--Main Article Image-->
                 <picture class="blog-mainImage">

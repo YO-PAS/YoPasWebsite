@@ -2,8 +2,8 @@
   <!--Featured-->
   <div class="blog-featured-group">
     <span class="blog-header">Featured Events</span>
-    {%- for post in collections.featured | reverse -%}
-    <a class="blog-feature" href="{{ post.url }}">
+    {%- for event in collections.featured | reverse -%}
+    <a class="blog-feature" href="{{ event.url }}">
       <picture class="blog-featureImage">
         <img
           src="{{ event.data.image }}"
