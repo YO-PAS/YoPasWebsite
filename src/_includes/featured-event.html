@@ -1,3 +1,5 @@
+
+
 <div class="blog-sidebar">
   <!-- Featured -->
   <div class="blog-featured-group">
@@ -7,23 +9,36 @@
       <div class="detail-item">
         <i class="fas fa-money-bill"></i>
         <p class="detail-label">Amount in UGX:</p>
-        <p class="detail-value">{{ post.data.amountInUGX }}</p>
+        <p class="detail-value">{{ amountInUGX }}</p>
       </div>
-      <div class="detail-item">
+      <!-- <div class="detail-item">
         <i class="fas fa-calendar-alt"></i>
         <p class="detail-label">Date:</p>
-        <p class="detail-value">{{ post.data.date | postDate }}</p>
-      </div>
+        <p class="detail-value">{{ date }}</p>
+      </div> -->
+      <!-- <div class="detail-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p class="detail-label">Time:</p>
+          <p class="detail-value">{{ eventTime }}</p>
+        </div> -->
       <div class="detail-item">
         <i class="fas fa-map-marker-alt"></i>
         <p class="detail-label">Location:</p>
-        <p class="detail-value">{{ post.data.location }}</p>
+        <p class="detail-value">{{ location }}</p>
       </div>
+
+
+
+      
       <!-- Buy Ticket Button with Icon -->
-      <a aria-label="Buy Ticket" href="{{ post.data.ticketLink }}" class="button-solid">
-        <i class="fas fa-ticket-alt"></i> Buy Ticket
+     
+
+        <!-- <a href="{{ TicketLink }}" class="button-solid" >Buy Ticket</a> -->
+        <a href="//{{ TicketLink }}" class="button-solid">Buy Ticket</a>
+
       </a>
     </div>
   </div>
+
   <!-- Add anything else in the sidebar below -->
 </div>

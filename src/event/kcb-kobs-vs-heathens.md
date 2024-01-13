@@ -12,7 +12,7 @@ tags:
   - post
 image: /images/post/kobsevent.jpeg
 imageAlt: kobsvsheathens
-TicketLink: amin.yopas.co.ug
+TicketLink: admin.yopas.co.ug
 ---
 KCB KOBS VS HEATHENS
 
