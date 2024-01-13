@@ -2,14 +2,23 @@
 pageName: "YoPas "
 eventTitle: "New Years "
 titleTag: Liliian Mbabazi
-blogDescription: New years Event
+eventDescription: Join us for an enchanting evening under the stars at the
+  "Enchanted Garden Soiree." Immerse yourself in the magic of a secret garden
+  where twinkling fairy lights, fragrant blossoms, and the soft melody of live
+  music create an atmosphere of pure delight.
 host: The Rugby Chill Event Ltd
-date: 2023-12-31T09:22:17.004Z
+amountInUGX: "10,000 "
+eventTime: "10: 00 pm"
+location: The Rugby Chill Event Ltd
+eventDate: 2024-01-13T11:45:18.491Z
 tags:
   - post
-image: /images/blog/liilian.jpeg
 imageAlt: poster
+TicketLink: admin.yopas.co.ug
 buyTicketLink: https://admin.yopas.co.ug/
+date: 2023-12-31T09:22:17.004Z
+blogDescription: New years Event
+image: /images/blog/liilian.jpeg
 ---
 # New Year's Eve With Lilian Mbabazi & The Band
 
