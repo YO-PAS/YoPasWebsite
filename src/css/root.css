@@ -11,6 +11,8 @@
     --bodyTextColorWhite: #FAFBFC;
     --headerColor: #1a1a1a;
     --yellowColor: #FFFF00;
+    --card-hover:hsl(215, 33%, 9%);
+
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -875,5 +877,85 @@
   transition: width .3s;
 }
 
+/* Event Details Box */
+.event-details-box {
+  background-color: #6bb0f2;
+  border: 1px solid var(--yellowColor); /* Assuming --yellowColor is a valid CSS variable */
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Center text content */
+  text-emphasis-color: var(--primary);
+}
+
+/* Detail Label */
+.detail-label {
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+/* Detail Value */
+.detail-value {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.work{
+
+  position: relative;
+
+  & .work-container{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-left: -40px; */
+
+    & .work-card{
+
+      max-width: 350px;
+      border: 1px solid var(--font-col1-o-100);
+      margin: 20px;
+
+      &:hover{
+        /* background: var(--card-hover); */
+        box-shadow: 10px 10px 0px 0px var(--secondary-color-o-100);
+        border-image: linear-gradient(120deg , var(--primary-color) , var(--secondary-color) ) 2% 2% stretch;
+      }
+
+      & .work-img{
+
+        & img{
+          max-width: 100%;
+          object-fit: contain;
+        }
+      }
+
+      & .work-content{
+        padding: 0px;
+
+        & h1{
+          font-size: 1.rem;
+        }
+
+        & p{
+          display: block;
+          margin-top: 10px !important;
+          opacity: .10;
+        }
+
+      }
+
+    }
+
+  }
+
+}
 
 

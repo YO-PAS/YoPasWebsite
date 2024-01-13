@@ -16,9 +16,10 @@
     font-size: 100%;
   }
   .blog-container {
-    width: 94%;
-    max-width: 70em;
+    width: 50%;
+    max-width: 80em;
     margin: auto;
+    border: #3498db;
   }
   .blog-link {
     font-size: 1rem;
@@ -210,8 +211,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    row-gap: 3.125em;
+    flex-direction: row;
+    column-gap: 1.25em;
   }
   .main-content {
     display: flex;

@@ -3,8 +3,11 @@ pageName: Sunset2
 eventTitle: Sunset
 titleTag: sunset
 eventDescription: sunset
-author: mercy
+host: Uganda Museum
+amountInUGX: 10000
+location : Uganda Museum
 eventDate: 2024-01-10T15:19:35.059Z
+eventTime : 11:00pm
 tags:
   - post
 image: /images/post/sunsetreflections.webp

@@ -3,7 +3,7 @@ pageName: Event
 eventTitle: event
 titleTag: event
 blogDescription: event
-author: mercy
+host: mercy
 date: 2023-12-28T16:53:13.207Z
 tags:
   - post

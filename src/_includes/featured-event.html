@@ -1,24 +1,29 @@
 <div class="blog-sidebar">
-  <!--Featured-->
+  <!-- Featured -->
   <div class="blog-featured-group">
-    <span class="blog-header">Featured Events</span>
-    {%- for event in collections.featured | reverse -%}
-    <a class="blog-feature" href="{{ event.url }}">
-      <picture class="blog-featureImage">
-        <img
-          src="{{ event.data.image }}"
-          alt="{{ event.data.imageAlt }}"
-          width="60"
-          height="60"
-          decoding="async"
-        />
-      </picture>
-      <div class="content-group">
-        <h3 class="feature-h3">{{ event.data.eventTitle }}</h3>
-        <span class="feature-date">{{ event.date | postDate }}</span>
+    <span class="blog-header">Event Details</span>
+    <!-- Side Box with Event Details -->
+    <div class="event-details-box">
+      <div class="detail-item">
+        <i class="fas fa-money-bill"></i>
+        <p class="detail-label">Amount in UGX:</p>
+        <p class="detail-value">{{ post.data.amountInUGX }}</p>
       </div>
-    </a>
-    {%- endfor -%}
+      <div class="detail-item">
+        <i class="fas fa-calendar-alt"></i>
+        <p class="detail-label">Date:</p>
+        <p class="detail-value">{{ post.data.date | postDate }}</p>
+      </div>
+      <div class="detail-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <p class="detail-label">Location:</p>
+        <p class="detail-value">{{ post.data.location }}</p>
+      </div>
+      <!-- Buy Ticket Button with Icon -->
+      <a aria-label="Buy Ticket" href="{{ post.data.ticketLink }}" class="button-solid">
+        <i class="fas fa-ticket-alt"></i> Buy Ticket
+      </a>
+    </div>
   </div>
-  <!--Add anything else in the sidebar below-->
+  <!-- Add anything else in the sidebar below -->
 </div>

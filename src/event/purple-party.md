@@ -3,7 +3,7 @@ pageName: Purple Party
 eventTitle: pary
 titleTag: party
 blogDescription: party
-author: paul
+host: paul
 date: 2023-12-23T13:53:25.979Z
 tags:
   - post

@@ -32,16 +32,16 @@ eleventyNavigation:
         <!--                 Blog Articles                -->
         <!-- ============================================ -->
 
-        {% if collections.event | length == 0 %}
+        {% if collections.post | length == 0 %}
             <h1>No Recent Eventsls</h1>
         {% endif %}
-        {%- for event in collections.event | reverse -%}
+        {%- for post in collections.post | reverse -%}
             <article class="recent-articles">
                 <!--Main Article Image-->
                 <picture class="blog-mainImage">
                     <img
-                        src="{{ event.data.image }}"
-                        alt="{{ event.data.imageAlt }}"
+                        src="{{ post.data.image }}"
+                        alt="{{ post.data.imageAlt }}"
                         width="795"
                         height="400"
                         decoding="async"
@@ -51,28 +51,27 @@ eleventyNavigation:
                 <div class="article-group">
                     <div class="blog-authorGroup">
                         <!--Author Image-->
-                        <picture class="blog-author-img">
-                            <img
-              src="/assets/svgs/profile.svg"
-              alt="house"
-              width="32"
-              height="32"
-              decoding="async"
-/>
-                        </picture>
-                        <span class="blog-author">{{ event.data.author }}</span>
+                        
+                        <span class="blog-author">{{ post.data.host }}</span>
                         <span aria-hidden="true" class="blog-dot"></span>
                         <!--Blog Date-->
-                        <span class="blog-date">{{ event.date | postDate }}</span>
+                        <span class="blog-date">{{ post.date | postDate }}</span>
                     </div>
                     <h2 class="blog-h1">
-                        {{ event.data.eventTitle }}
+                        {{ post.data.eventTitle }}
                     </h2>
+                    <p class="blog-h2">Event time : {{ post.data.eventTime }}</p>
+
+                    <p class="blog-h2">Ticket price  in UGX: {{ post.data.amountInUGX }}</p>
+                    <p class="blog-h2">Location: {{ post.data.location }}</p>
+
+
                     <p class="blog-desc">
-                        {{ event.data.eventDescription }}
+                        {{ post.data.eventDescription }}
                     </p>
-                    <a href="{{ event.url }}" class="blog-link">More About The Event</a>
+                    <a href="{{ post.url }}" class="blog-link">More About The Event</a>
                 </div>
+
             </article>
         {%- endfor -%}
     </div>
@@ -81,5 +80,5 @@ eleventyNavigation:
     <!--                Featured Event Posts                -->
     <!-- ============================================ -->
 
-    {% include 'featured-event.html' %}
+
 </div>

@@ -137,50 +137,7 @@ effective ticketing solution for all events.
   </div>
 </section>
 
-<!-- ============================================ -->
-<!--            Extra Content To Rank             -->
-<!-- ============================================ -->
 
-
-<!-- ============================================ -->
-<!--                   Gallery                    -->
-<!-- ============================================ -->
-
-<!-- <section id="gallery">
-  <div class="cs-container">
-    <span class="cs-topper">Our Portfolio</span>
-    <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
-    <div class="cs-image-group">
-      <!-- Row 1-->
-      <!-- <div class="cs-row cs-row-1">
-        {% image './src/images/portfolio/port1.jpg', 'new hallway', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port4.jpg', 'new home construction', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port7.jpg', 'building a new wall', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%} -->
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
-      <!-- Row 2 -->
-      <!-- <div class="cs-row cs-row-2">
-        {% image './src/images/portfolio/port2.jpg', 'new kitchen', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port5.jpg', 'apartment addition', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port8.jpg', 'kew kitchen cabinets', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%} -->
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      <!-- </div> -->
-      <!-- Row 3 -->
-      <!-- <div class="cs-row cs-row-3">
-        {% image './src/images/portfolio/port3.jpg', 'new kitchen', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port6.jpg', 'apartment addition', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port9.jpg', 'kew kitchen cabinets', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-
-        <! To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      <!-- </div>
-    </div>
-    <a href="/projects" class="button-solid">View Full Gallery</a>
-  </div>
-</section>  --> 
-
-<!-- ============================================ -->
-<!--                   event                    -->
-<!-- ============================================ -->
 
 <section id="event">
   <div class="cs-container">
@@ -195,37 +152,43 @@ effective ticketing solution for all events.
         <!--                 Events             -->
         <!-- ============================================ -->
     
-        {% if collections.event | length == 0 %}
+        {% if collections.post | length == 0 %}
           <h1>No Recent Events</h1>
         {% endif %}
  
-        {%- for event in collections.event | reverse -%}
+        {%- for post in collections.post | reverse -%}
           {% if loop.index0 < 4 %}
             <article class="recent-articles">
               <!--Main Article Image-->
               <picture class="blog-mainImage">
-                <img src="{{ event.data.image }}" alt="{{ event.data.imageAlt }}" width="300" height="350" decoding="async" />
+                <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" width="300" height="350" decoding="async" />
               </picture>
               <!--Article Info-->
               <div class="article-group">
+                <h2 class="blog-h2">
+                  {{ post.data.eventTitle }}
+                </h2>
                 <div class="blog-authorGroup">
                   <!--Author Image-->
-                  <picture class="blog-author-img">
+                  <!-- <picture class="blog-author-img">
                     <img src="/assets/svgs/profile.svg" alt="house" width="32" height="32" decoding="async" />
-                  </picture>
-                  <span class="blog-author">{{ event.data.author }}</span>
-                  <span aria-hidden="true" class="blog-dot"></span>
+                  </picture> -->
+                  
+                  <span class="blog-author">{{ post.data.host }}</span>
+                  <!-- <span aria-hidden="true" class="blog-dot"></span> -->
+                
+
                   <!--Blog Date-->
-                  <span class="blog-date">{{ event.date | postDate }}</span>
+                  
                 </div>
-                <h2 class="blog-h1">
-                  {{ event.data.eventTitle }}
-                </h2>
+                <span class="blog-date">{{ post.date | postDate }}</span>
+
+               
                 <p class="blog-desc">
                   {{ event.data.eventDescription }}
                 </p>
                 <!-- <a href="{{ buyTicketLink }}" class="buy-ticket-button" >Buy Ticket</a> -->
-                <a aria-label="read more event" href="{{ TicketLink }}"class="button-solid-thin">Buy Ticket</a>
+                <a aria-label="read more event" href="{{ post.url }}"class="button-solid-thin">See More</a>
 
               </div>
             </article>
@@ -237,7 +200,7 @@ effective ticketing solution for all events.
     
     
     
-    <a aria-label="read more event" href="/event" class="button-solid">See More</a>
+    <a aria-label="read more event" href="/event" class="button-solid">More Events </a>
   </div>
 </section>
 <!-- ============================================ -->

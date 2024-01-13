@@ -19,6 +19,8 @@
     width: 94%;
     max-width: 70em;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
   }
   .blog-link {
     font-size: 1rem;
@@ -238,7 +240,7 @@
   .recent-articles {
     overflow: hidden;
     max-width: 49.6875em;
-    flex: none;
+    flex:  1 1 48%;
     width: 100%;
   }
   .recent-articles .blog-mainImage {
@@ -806,3 +808,10 @@
     right: auto;
   }
 }
+
+.featured-event-box {
+  flex: 1 1 48%; /* Adjust the width as needed */
+  margin: 1%; /* Adjust the margin as needed */
+  box-sizing: border-box;
+}
+

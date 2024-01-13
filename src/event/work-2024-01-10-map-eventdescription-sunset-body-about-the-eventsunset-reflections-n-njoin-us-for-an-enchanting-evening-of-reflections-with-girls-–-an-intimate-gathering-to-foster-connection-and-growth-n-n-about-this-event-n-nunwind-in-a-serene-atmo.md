@@ -3,7 +3,7 @@ pageName: Sunset
 eventTitle: Sunset
 titleTag: sunset
 eventDescription: sunset
-author: mercy
+host: mercy
 eventDate: 2024-01-19T14:48:41.549Z
 tags:
   - post

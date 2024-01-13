@@ -22,7 +22,11 @@ collections:
       - { label: 'Event Title', name: 'eventTitle', widget: 'string' }
       - { label: 'Title Tag', name: 'titleTag', widget: 'string' }
       - { label: 'Description', name: 'eventDescription', widget: 'string' }
-      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Host', name: 'host', widget: 'string' }
+      - { label: 'Amount in UGX', name: 'amountInUGX', widget: 'string' }
+      - { label: 'Event Time', name: 'eventTime', widget: 'string' }
+
+      - { label: 'Location', name: 'location', widget: 'string' }
       - { label: 'Date', name: 'eventDate', widget: 'datetime' }
       - { label: 'Tags', name: 'tags', widget: 'list', default: ['post'] }
       - { label: 'Featured Image', name: 'image', widget: 'image' }
@@ -45,7 +49,5 @@ collections:
       - { label: 'Featured Image', name: 'image', widget: 'image' }
       - { label: 'Image Caption', name: 'imageAlt', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-
-
-
+  
 

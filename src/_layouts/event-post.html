@@ -31,28 +31,25 @@ eleventyComputed:
 
         <article class="blog-article">
             <!--Main Article Image-->
-            <picture class="blog-mainImage">
+            <!-- <picture class="blog-mainImage">
                 <img src="{{ image }}" alt="{{ imageAlt }}" width="795" height="400" decoding="async"/>
-            </picture>
+            </picture> -->
 
             <!--Article Info-->
             <div class="article-group">
                 <h1 class="blog-h1">{{ eventTitle }}</h1>
                 <div class="blog-authorGroup">
                     <!--Author Image-->
-                    <picture class="blog-author-img">
-                        <img src="/assets/svgs/profile.svg" alt="house" width="32" height="32" decoding="async"/>
-                    </picture>
-                    <span class="blog-author">{{ author }}</span>
+                    
+                    <span class="blog-author">{{ host }}</span>
                     <span aria-hidden="true" class="blog-dot"></span>
                     <!--Blog Date-->
-                    <span class="blog-date">{{ date | postDate }}</span>
+                    <span class="blog-date">{{ date }}</span>
                 </div>
             </div>
             <section id="blog-content">
                 {{ content | safe }}
             
-                <a href="{{ TicketLink }}" class="buy-ticket-button" >Buy Ticket</a>
            
             </section>
 
@@ -66,5 +63,45 @@ eleventyComputed:
     <!--                   Sidebar                    -->
     <!-- ============================================ -->
 
-    {% include 'featured-event.html' %}
+    <div class="blog-sidebar">
+        <!-- Featured -->
+        <div class="blog-featured-group">
+          <span class="blog-header">Event Details</span>
+          <!-- Side Box with Event Details -->
+          <div class="event-details-box">
+            <div class="detail-item">
+              <i class="fas fa-money-bill"></i>
+              <p class="detail-label">Amount in UGX:</p>
+              <p class="detail-value">{{ amountInUGX }}</p>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-calendar-alt"></i>
+              <p class="detail-label">Date:</p>
+              <p class="detail-value">{{ date }}</p>
+            </div>
+            <!-- <div class="detail-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p class="detail-label">Time:</p>
+                <p class="detail-value">{{ eventTime }}</p>
+              </div> -->
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p class="detail-label">Location:</p>
+              <p class="detail-value">{{ location }}</p>
+            </div>
+
+
+
+            
+            <!-- Buy Ticket Button with Icon -->
+           
+
+              <a href="{{ TicketLink }}" class="button-solid" >Buy Ticket</a>
+
+            </a>
+          </div>
+        </div>
+        <!-- Add anything else in the sidebar below -->
+      </div>
+      
 </div>

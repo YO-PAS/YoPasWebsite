@@ -3,7 +3,7 @@ pageName: "YoPas "
 eventTitle: "New Years "
 titleTag: Liliian Mbabazi
 blogDescription: New years Event
-author: The Rugby Chill Event Ltd
+host: The Rugby Chill Event Ltd
 date: 2023-12-31T09:22:17.004Z
 tags:
   - post
