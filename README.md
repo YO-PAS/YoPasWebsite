@@ -50,6 +50,10 @@ Step 3: Launch Time!
     ```
     eleventy build
 
+    OR 
+    
+    npx @11ty/eleventy --serve 
+
     ```
 
 
