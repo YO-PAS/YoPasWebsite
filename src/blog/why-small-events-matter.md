@@ -12,7 +12,7 @@ blogDescription: At a glance, smaller events may seem like a waste of time and
 author: Admin
 date: 2024-01-13T11:38:37.283Z
 tags:
-  - post
+  - blog
 image: /images/post/smallevents-05.png
 imageAlt: Why Small Events Matter
 ---
