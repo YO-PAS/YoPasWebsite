@@ -780,12 +780,16 @@
 @media only screen and (min-width: 0em) {
   .blog-container {
     padding: clamp(20px, 3vw, 50px) 0;
+    text-decoration: none;
+
   }
   .main-content-wrapper {
     display: flex;
     flex-direction: column; /* Change to column for mobile */
     align-items: center;
     row-gap: 2.5em; /* Adjust the gap between rows */
+    text-decoration: none;
+
   }
   .main-content {
     display: flex;
@@ -794,6 +798,8 @@
     justify-content: center;
     width: 100%;
     row-gap: 2.5em; /* Adjust the gap between rows */
+    text-decoration: none;
+
   }
 }
 
@@ -1109,6 +1115,8 @@
     font-weight: 700;
     margin: 1rem 0;
     color: var(--bodyHeader);
+    text-decoration: none;
+
   }
   .recent-articles .blog-desc {
     font-size: 1rem;
@@ -1162,6 +1170,8 @@
 @media only screen and (min-width: 64em) {
   .recent-articles .blog-h1 {
     max-width: 31.25rem;
+    text-decoration: none;
+
   }
 }
 /* Dark Mode */

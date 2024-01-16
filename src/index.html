@@ -90,7 +90,7 @@ effective ticketing solution for all events.
   <div class="cs-container">
     <span class="cs-topper">Events</span>
     <p class="cs-text">
-      Forget queues and lost paper stubs, Yopas takes your events to the next level with seamless ticketing magic! Browse a vibrant calendar of concerts, festivals, and workshops happening near you, then snap up your tickets in seconds with secure payments and instant delivery. No more stress, just pure excitement. 
+      Forget queues and lost paper stubs, Yopas takes your events to the next level with seamless ticketing magic! Browse a vibrant calendar of concerts, festivals, and workshops happening near you, then snap up your tickets in seconds with secure payments and instant delivery. No more stress, just pure excitement.
     </p>
     <div class="blog-container main-content-wrapper">
       <!--Main content -->
@@ -98,59 +98,38 @@ effective ticketing solution for all events.
         <!-- ============================================ -->
         <!--                 Events             -->
         <!-- ============================================ -->
-    
+
         {% if collections.post | length == 0 %}
-          <h1>No Recent Events</h1>
+        <h1>No Recent Events</h1>
         {% endif %}
- 
+
         {%- for post in collections.post | reverse -%}
-          {% if loop.index0 < 4 %}
-            <article class="recent-articles">
-              <!--Main Article Image-->
-              <a aria-label="read more event" href="{{ post.url }}">
+        {% if loop.index0 < 4 %}
+        <article class="recent-articles">
+          <!--Main Article Image-->
+          <a aria-label="read more event" href="{{ post.url }}" style="text-decoration: none; color: inherit;">
 
-              <picture class="blog-mainImage">
-                <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" width="300" height="350" decoding="async" />
-              </picture>
-              <!--Article Info-->
-              <div class="article-group">
-                <h2 class="blog-h2">
-                  {{ post.data.eventTitle }}
-                </h2>
-                <div class="blog-authorGroup">
-                  <!--Author Image-->
-                  <!-- <picture class="blog-author-img">
-                    <img src="/assets/svgs/profile.svg" alt="house" width="32" height="32" decoding="async" />
-                  </picture> -->
-                  
-                  <span class="blog-author">{{ post.data.host }}</span>
-                  <!-- <span aria-hidden="true" class="blog-dot"></span> -->
-                
-
-                  <!--Blog Date-->
-                  
-                </div>
-                <span class="blog-date">{{ post.date | postDate }}</span>
-
-               
-                <p class="blog-desc">
-                  {{ event.data.eventDescription }}
-                </p>
-                <!-- <a href="{{ buyTicketLink }}" class="buy-ticket-button" >Buy Ticket</a> -->
-                <!-- <a aria-label="read more event" href="{{ post.url }}"class="button-solid-thin">See More</a> -->
-
+            <picture class="blog-mainImage">
+              <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" width="300" height="350" decoding="async" />
+            </picture>
+            <!--Article Info-->
+            <div class="article-group">
+              <!-- Apply the Nunjucks syntax to remove underline from this specific heading -->
+              <h2 class="blog-h2">{{ post.data.eventTitle }}</h2>
+              <div class="blog-authorGroup">
+                <span class="blog-author">{{ post.data.host }}</span>
               </div>
-            </a>
+              <span class="blog-date">{{ post.date | postDate }}</span>
 
-            </article>
-          {% endif %}
+              <p class="blog-desc">{{ event.data.eventDescription }}</p>
+            </div>
+          </a>
+        </article>
+        {% endif %}
         {%- endfor -%}
       </div>
     </div>
-    
-    
-    
-    
+
     <a aria-label="read more event" href="/event" class="button-solid">More Events </a>
   </div>
 </section>
