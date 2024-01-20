@@ -16,10 +16,11 @@
     font-size: 100%;
   }
   .blog-container {
-    width: 50%;
-    max-width: 80em;
+    width: 94%;
+    max-width: 70em;
     margin: auto;
-    border: #3498db;
+    display: flex;
+    flex-wrap: wrap;
   }
   .blog-link {
     font-size: 1rem;
@@ -211,17 +212,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    column-gap: 1.25em;
+    flex-direction: column;
+    row-gap: 3.125em;
   }
   .main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minmax values as needed */
+    gap: 3.125em; /* Adjust the gap between columns and rows as needed */
     justify-content: center;
-    row-gap: 3.125em;
-    width: 100%;
-  }
+    align-items: stretch; /* Ensures all grid items stretch to the same height */
+
+}
 }
 /* Tablet - 1024px */
 @media only screen and (min-width: 64em) {
@@ -231,16 +232,22 @@
     column-gap: 1.25em;
   }
 }
+
+
 /*-- -------------------------- -->
 <---    Recent Blog Articles    -->
 <--- -------------------------- -*/
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   .recent-articles {
-    overflow: hidden;
-    max-width: 49.6875em;
-    flex: none;
-    width: 100%;
+    display: grid;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+    /* Add any other styling you need for each article */
   }
   .recent-articles .blog-mainImage {
     width: 100%;
@@ -313,7 +320,6 @@
   }
   .recent-articles .blog-link {
     font-size: 1rem;
-    /* 46px - 56px */
     line-height: clamp(2.875em, 5.5vw, 3.5em);
     text-decoration: none;
     font-weight: 700;
@@ -326,7 +332,6 @@
     border-radius: 0.25rem;
     display: inline-block;
     position: relative;
-    /* prevent padding from adding to the width */
     box-sizing: border-box;
     z-index: 1;
     transition: color .3s;
@@ -353,12 +358,155 @@
     opacity: 1;
   }
 }
-/* Mobile - 1024px */
+
+/* Desktop - 1024px */
 @media only screen and (min-width: 64em) {
+  .main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.125em;
+    justify-content: center;
+  }
+
+  .recent-articles {
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .recent-articles .blog-mainImage {
+    width: 100%;
+    height: clamp(200px, 30vw, 400px);
+    position: relative;
+    display: block;
+    border-radius: 0.5em 0.5em 0 0;
+    overflow: hidden;
+  }
+
+  .recent-articles .blog-mainImage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .recent-articles .article-group {
+    padding: clamp(30px, 5vw, 50px);
+    border: 1px solid #ebebeb;
+    border-radius: 0 0 0.5em 0.5em;
+  }
+
+  .recent-articles .blog-author-img {
+    width: 2em;
+    height: 2em;
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .recent-articles .blog-author-img {
+    width: 2em;
+    height: 2em;
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .recent-articles .blog-author-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .recent-articles .blog-authorGroup {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .recent-articles .blog-author,
+  .recent-articles .blog-date {
+    font-size: 0.875rem;
+    color: var(--bodyText);
+    line-height: 1.5em;
+  }
+
+  .recent-articles .blog-dot {
+    width: 3px;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: block;
+  }
+
   .recent-articles .blog-h1 {
-    max-width: 31.25rem;
+    font-size: clamp(20px, 5vw, 32px);
+    line-height: 1.4em;
+    font-weight: 700;
+    margin: 1rem 0;
+    color: var(--bodyHeader);
+  }
+
+  .recent-articles .blog-desc {
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin: 1rem 0 2rem;
+    color: var(--bodyText);
+  }
+
+  .recent-articles .blog-link {
+    font-size: 1rem;
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0.75ren 1.5rem;
+    background-color: var(--bodyHeader);
+    border-radius: 0.25rem;
+      border: 2px solid var(--bodyHeader); /* Add a border for emphasis */
+
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+    transition: color .3s, background-color .3s, border-color .3s;
+  }
+
+  .recent-articles .blog-link:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+    transition: opacity .3s;
+    border: 1px solid var(--bodyHeader);
+    z-index: -1;
+  }
+
+  .recent-articles .blog-link:hover {
+    color: var(--bodyHeader);
+  }
+
+  .recent-articles .blog-link:hover:before {
+    opacity: 1;
   }
 }
+
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
   body.dark-mode .recent-articles .blog-h1,
@@ -367,19 +515,23 @@
   body.dark-mode .recent-articles .blog-date {
     color: #f7f7f7;
   }
+
   body.dark-mode .blog-sidebar .feature-h3,
   body.dark-mode .blog-sidebar .feature-date,
   body.dark-mode .blog-sidebar .blog-header {
     color: #f7f7f7;
   }
+
   body.dark-mode .blog-sidebar .blog-header:after {
     background: var(--primary);
   }
+
   body.dark-mode .blog-article .blog-h1,
   body.dark-mode .blog-article .blog-author,
   body.dark-mode .blog-article .blog-date {
     color: #f7f7f7;
   }
+
   body.dark-mode .blog-article #blog-content h2,
   body.dark-mode .blog-article #blog-content h3,
   body.dark-mode .blog-article #blog-content h4,
@@ -387,15 +539,21 @@
   body.dark-mode .blog-article #blog-content h6 {
     color: #f7f7f7;
   }
+
   body.dark-mode .blog-article #blog-content p,
   body.dark-mode .blog-article #blog-content li {
     color: #f7f7f7;
     opacity: .8;
   }
+
   body.dark-mode .blog-article #blog-content a {
     color: #9dafe5;
   }
 }
+
+
+
+
 /*-- -------------------------- -->
 <---          Sidebar           -->
 <--- -------------------------- -*/
@@ -497,13 +655,47 @@
     max-width: 22.5em;
   }
 }
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64em) {
+  .blog-sidebar {
+    max-width: 22.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    row-gap: 1.875rem;
+  }
+  .blog-sidebar .blog-featured-group {
+    width: 100%;
+    display: flex;
+  }
+  .blog-sidebar .blog-header,
+  .blog-sidebar .blog-header:after {
+    text-align: left;
+  }
+  .blog-sidebar .blog-feature {
+    flex-direction: row;
+    border-bottom: none;
+    padding: 0;
+  }
+  .blog-sidebar .blog-featureImage {
+    flex: 0 0 auto;
+    margin-right: 1.5em;
+  }
+  .blog-sidebar .feature-h3,
+  .blog-sidebar .feature-date {
+    text-align: left;
+  }
+}
+
 /*-- -------------------------- -->
 <---        Blog Articles       -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   .blog-article {
-    max-width: 49.6875em;
+    max-width: 100.6875em;
     width: 100%;
     display: block;
   }
@@ -629,6 +821,32 @@
     border-radius: 0.5rem;
   }
 }
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48em) {
+  .blog-article {
+    max-width: 70em;
+    padding: 0 2em;
+  }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64em) {
+  .blog-article {
+    max-width: 70em;
+    width: 200%;
+    margin: 0 auto;
+  }
+  .blog-article .blog-mainImage {
+    margin-bottom: 2.5em;
+  }
+  .blog-article #blog-content {
+    padding-top: 2em;
+  }
+}
+
+
+
 /*-- -------------------------- -->
 <---           Footer           -->
 <--- -------------------------- -*/
@@ -808,21 +1026,9 @@
   }
 }
 
-/* Add this CSS for the Buy Ticket button */
-/* Add this CSS for the Buy Ticket button */
-.buy-ticket-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #3498db; /* Choose your desired background color */
-  color: yellow; /* Choose your desired text color */
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Add color transition */
+.featured-event-box {
+  flex: 1 1 48%; /* Adjust the width as needed */
+  margin: 1%; /* Adjust the margin as needed */
+  box-sizing: border-box;
 }
-
-.buy-ticket-button:hover {
-  background-color: yellow; /* Choose a slightly different color for the hover effect */
-  color: black; /* Set the text color to black on hover */
-}
-
 
