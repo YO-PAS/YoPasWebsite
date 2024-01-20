@@ -858,6 +858,43 @@
   max-width: 80em;
   margin: auto;
 }
+/* Desktop - 1024px */
+@media only screen and (min-width: 64em) {
+  .main-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 2.25em;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.25em; /* Adjust the gap between columns */
+    justify-content: center;
+    align-items: stretch; /* Ensures all grid items stretch to the same height */
+  }
+
+  .blog-article .blog-dot {
+    width: 5px;
+    height: 5px;
+    background-color: #fe4f70;
+    border-radius: 50%;
+    display: block;
+  }
+
+  .recent-articles .blog-dot {
+    width: 3px;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: block;
+  }
+}
+
+
+
+
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
