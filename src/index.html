@@ -4,7 +4,7 @@ description: 'Meta description for the page'
 metaTitle: 'Title that shows up on google searches'
 tagTitle: 'Pixel Perfect Websites'
 preloadImg: '/images/landing-1920w.webp'
-preloadCSS: '/css/local.css'
+preloadCSS: '/css/event.css'
 permalink: '/'
 eleventyNavigation:
   key: Home
@@ -97,7 +97,7 @@ eleventyNavigation:
         {% endif %}
 
         {%- for post in collections.post | reverse -%}
-        {% if loop.index0 < 4 %}
+        {% if loop.index0 < 6 %}
         <article class="recent-articles">
           <!-- Main Article Image -->
           <a aria-label="read more event" href="{{ post.url }}" style="text-decoration: none; color: inherit;">
