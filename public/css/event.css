@@ -365,7 +365,7 @@
   .main-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 9.125em;
+    gap: 10px 150px;    
     justify-content: center;
   }
 
