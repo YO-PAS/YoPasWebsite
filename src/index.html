@@ -110,11 +110,14 @@ eleventyNavigation:
             <div class="article-group">
               <!-- Apply the Nunjucks syntax to remove underline from this specific heading -->
               <h2 class="blog-h2">{{ post.data.eventTitle }}</h2>
-              <div class="blog-authorGroup">
-                <span class="blog-author">{{ post.data.host }}</span>
-              </div>
-              <span class="blog-date">{{ post.date | postDate }}</span>
-
+              <!-- <div class="blog-authorGroup">
+                <span class="blog-date">{{ post.data.host }}</span>
+              </div> -->
+              <div class="date-info">
+                <span class="blog-date">{{ post.date | postDate }}</span>
+                <span class="blog-date">{{ post.data.host }}</span>
+            </div>
+              
               <!-- <p class="blog-desc">{{ event.data.eventDescription }}</p> -->
             </div>
           </a>

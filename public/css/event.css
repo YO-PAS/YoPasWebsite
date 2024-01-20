@@ -319,7 +319,7 @@
     font-size: 0.875rem;
     color: var(--bodyText);
     line-height: 1.5em;
-    text-align: center;
+    justify-content: center;
   }
   .recent-articles .blog-dot {
     width: 3px;
@@ -465,11 +465,20 @@
     gap: 0.75rem;
   }
 
-  .recent-articles .blog-author,
+ 
   .recent-articles .blog-date {
     font-size: 0.875rem;
     color: var(--bodyText);
     line-height: 1.5em;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .recent-articles .blog-author {
+    font-size: 0.875rem;
+    color: var(--bodyText);
+    line-height: 1.5em;
+    text-align: center;
   }
 
   .recent-articles .blog-dot {
@@ -1855,4 +1864,9 @@
   .cs-partner-logo {
     margin: 0 15px; /* Adjust the margin for tablets */
   }
+}
+.date-info,
+.additional-info {
+    display: flex;
+    flex-direction: column;
 }
