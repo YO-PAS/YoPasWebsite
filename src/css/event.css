@@ -321,6 +321,12 @@
     line-height: 1.5em;
     justify-content: center;
   }
+  .recent-articles .blog-h2 {
+    font-size: 0.875rem;
+    color: var(--bodyText);
+    line-height: 1.5em;
+    justify-content: center;
+  }
   .recent-articles .blog-dot {
     width: 3px;
     height: 3px;
@@ -473,6 +479,13 @@
     justify-content: center;
     text-align: center;
   }
+  .recent-articles .blog-h2 {
+    font-size: 0.875rem;
+    color: var(--bodyText);
+    line-height: 1.5em;
+    justify-content: center;
+    text-align: center;
+  }
 
   .recent-articles .blog-author {
     font-size: 0.875rem;
@@ -555,6 +568,8 @@
   body.dark-mode .recent-articles .blog-h1,
   body.dark-mode .recent-articles .blog-desc,
   body.dark-mode .recent-articles .blog-author,
+  body.dark-mode .recent-articles .blog-h2 ,
+
   body.dark-mode .recent-articles .blog-date {
     color: #f7f7f7;
   }
@@ -571,6 +586,7 @@
 
   body.dark-mode .blog-article .blog-h1,
   body.dark-mode .blog-article .blog-author,
+  body.dark-mode .blog-article .blog-h2,
   body.dark-mode .blog-article .blog-date {
     color: #f7f7f7;
   }
@@ -739,7 +755,7 @@
 @media only screen and (min-width: 0em) {
   .blog-article {
     max-width: 100.6875em;
-    width: 100%;
+    width: 150%;
     display: block;
   }
   .blog-article .blog-mainImage {
@@ -781,6 +797,7 @@
     align-items: center;
     gap: 0.75rem;
   }
+  .blog-article .blog-h2
   .blog-article .blog-author,
   .blog-article .blog-date {
     font-size: 0.875rem;
@@ -878,7 +895,7 @@
 @media only screen and (min-width: 64em) {
   .blog-article {
     max-width: 70em;
-    width: 200%;
+    width: 330%;
     margin: 0 auto;
   }
   .blog-article .blog-mainImage {
@@ -1827,6 +1844,8 @@
      font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
+    color: var(--primaryLight);
+
 }
 
 /* Style for the partner logos */
@@ -1851,11 +1870,12 @@
 @media screen and (max-width: 767px) {
   /* Styles for phones */
   .cs-partner-logo {
-    margin: 0 10px; /* Adjust the margin for smaller screens */
+    margin: 0 50px;
+    flex-direction: column; /* Adjust the margin for smaller screens */
   }
 
   .cs-topper {
-    font-size: 20px;
+    font-size: var(--topperFontSize);
   }
 }
 
