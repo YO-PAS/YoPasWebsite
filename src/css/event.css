@@ -1227,7 +1227,8 @@
     right: clamp(1rem, 4vw, 2rem);
   }
   #sbs .button-solid {
-    margin-top: 2rem;
+    margin-top: 2px;
+   
   }
 }
 /* Desktop - 1024px */
@@ -1340,7 +1341,7 @@
     max-width: 33.875rem;
   }
   #sbs-r .cs-topper {
-    font-size: var(--topperFontSize);
+    font-size: 20px;
     line-height: 1.2em;
     text-transform: uppercase;
     text-align: left;
@@ -1837,12 +1838,12 @@
 /* Style for the "Our Partners" heading */
 .cs-topper {
   /* font-size: 24px; */
-  /* font-weight: bold; */
+  font-weight: bold;
   margin-bottom: 20px;
   display: block;
   /* color: #333;  */
-     font-size: var(--topperFontSize);
-    line-height: 1.2em;
+  font-size: var(--topperFontSize);
+  line-height: 1.2em;
     text-transform: uppercase;
     color: var(--primaryLight);
 
