@@ -57,6 +57,8 @@ eleventyComputed:
             <!-- Buy Ticket Button -->
 
         </article>
+        {% include "featured-event.html" %}
+
     </div>
     <!-- End .main-content -->
 
@@ -64,34 +66,12 @@ eleventyComputed:
     <!--                   Sidebar                    -->
     <!-- ============================================ -->
 
-  
-    <div class="blog-sidebar">
-        <!-- Featured -->
-        <div class="blog-featured-group">
-          <!-- Side Box with Event Details -->
-          <div class="event-details-box">
-            <span class="blog-header">Event Details</span> 
 
-            <div class="detail-item">
-              <i class="fas fa-money-bill"></i>
-              <p class="detail-label">Amount in UGX:</p>
-              <p class="detail-value">{{ amountInUGX }}</p>
-            </div>
-           
-            <div class="detail-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <p class="detail-label">Location:</p>
-              <p class="detail-value">{{ location }}</p>
-            </div>   
-              <a href="//{{ TicketLink }}" class="button-solid">Buy Ticket</a>
-      
-            </a>
-          </div>
-        </div>
-      
-      </div>
+    
      
 
 
 
 </div>
+
+
