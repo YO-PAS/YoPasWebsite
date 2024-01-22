@@ -647,7 +647,7 @@
     content: '';
     position: center;
     display: block;
-    width: 3.125rem;
+    width: 5.125rem;
     height: 3px;
     background: var(--bodyHeader);
     border-radius: 0.25rem;
@@ -708,6 +708,7 @@
 @media only screen and (min-width: 64em) {
   .blog-sidebar {
     max-width: 22.5em;
+    
 
   }
 
@@ -717,17 +718,17 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64em) {
   .blog-sidebar {
-    max-width: 22.5em;
+    max-width: 500.5em;
     display: flex;
     flex-direction: column;
     justify-content: right;
     row-gap: 1.875rem;
   }
   .blog-sidebar .blog-featured-group {
-    width: 100%;
+    width: 150%;
     padding-left: 0%;
     margin-left: 150%;
-    justify-content: right;
+    justify-content: center;
     
 
   
