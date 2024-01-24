@@ -33,7 +33,7 @@ eleventyNavigation:
         <!-- ============================================ -->
 
         {% if collections.blog | length == 0 %}
-            <h1>No Recent Posts</h1>
+            <h1>No Recent Blog</h1>
         {% endif %}
         {%- for blog in collections.blog | reverse -%}
             <article class="recent-articles">
