@@ -789,7 +789,8 @@
     text-align: left;
   }
   .event-details-box {
-    padding-top: 20;
+    padding-top: 10px;
+    margin-left: 180%;
   }
 }
 
