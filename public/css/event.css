@@ -761,9 +761,9 @@
     row-gap: 1.875rem;
   }
   .blog-sidebar .blog-featured-group {
-    width: 150%;
+    width: 160%;
     padding-left: 0%;
-    margin-left: 150%;
+    margin-left: 180%;
     justify-content: center;
     
 
@@ -789,8 +789,8 @@
     text-align: left;
   }
   .event-details-box {
-    padding-top: 20px;
-    margin-left: 200%;
+    padding: 50px;
+    margin-left: 250%;
   }
 }
 
