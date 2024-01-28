@@ -58,7 +58,7 @@
     font-family: 'Roboto', sans-serif;
     color: var(--bodyTextColor);
     overflow-x: hidden;
-    letter-spacing: 1px; /* Adjust the spacing value according to your preference */
+    letter-spacing: 1.5px; /* Adjust the spacing value according to your preference */
 
   }
   *,
