@@ -1159,11 +1159,15 @@
   }
   #sbs .cs-left {
     /* scaling the font size with the view width */
-    font-size: min(2.31vw, .7em);
+    font-size: 10px;
     /* using ems so we can use font size to scale the whole section */
     width: 39.4375em;
     height: 39.75em;
     position: relative;
+  }
+  #sbs-r .cs-right {
+    margin: auto;
+    max-width: 33.875rem;
   }
   #sbs .cs-picture {
     border-radius: 1.5em;
@@ -1210,6 +1214,7 @@
     font-weight: 600;
     color: var(--primary);
     display: block;
+    margin-top: 30%;
   }
   #sbs .cs-title {
     font-size: var(--headerFontSize);
@@ -1222,14 +1227,15 @@
     position: relative;
   }
   #sbs .cs-text {
-    font-size: var(--bodyFontSize);
     line-height: 2.0em;
     text-align: left;
     width: 100%;
     max-width: 46.875rem;
-    margin: 0 auto;
     margin-bottom: 4%;
     color: var(--bodyTextColor);
+    font-size: 120%;
+    margin: 20px;
+    padding-right: 30px;
   }
   #sbs .cs-text:last-of-type {
     margin-bottom: 2rem;
@@ -1350,6 +1356,7 @@
     height: 39.75em;
     position: relative;
   }
+  
   #sbs-r .cs-picture {
     border-radius: 1.5em;
     /* clips img tag corners */
@@ -1407,7 +1414,7 @@
     position: relative;
   }
   #sbs-r .cs-text {
-    font-size: var(--bodyFontSize);
+    font-size: 10%;
     line-height: 1.5em;
     text-align: left;
     width: 100%;
@@ -1470,6 +1477,7 @@
     flex: none;
     /* sends it to the right */
     order: 2;
+    
   }
   #sbs-r .cs-right {
     margin: 0;
@@ -1654,8 +1662,8 @@
     position: relative;
   }
   #event .cs-text {
-    font-size: var(--bodyFontSize);
     line-height: 1.5rem;
+    font-size: 20%;
     text-align: center;
     width: 100%;
     max-width: 40.625rem;
@@ -1970,7 +1978,7 @@
 }
 
 
-/* General styles for the section */
+/* General styles for the partners  section */
 #partners {
   background-color: #f5f5f5; /* Light gray background */
   padding: 5rem 0; /* Top and bottom padding */
@@ -1978,8 +1986,7 @@
 }
 
 #partners h2 {
-  font-size: 2rem; /* Adjust heading size as needed */
-  font-weight: bold;
+  font-size: 1.5rem; /* Adjust heading size as needed */
   margin-bottom: 2rem; /* Space below heading */
 }
 
@@ -2009,3 +2016,4 @@
 #partners img:hover {
   opacity: 0.8; /* Slightly darken on hover */
 }
+

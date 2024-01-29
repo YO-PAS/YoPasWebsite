@@ -82,8 +82,7 @@
     position: relative;
   }
   #sbs .cs-text {
-    font-size: var(--bodyFontSize);
-    line-height: 1.5em;
+    line-height: 1.8em;
     text-align: left;
     width: 100%;
     max-width: 46.875rem;
