@@ -167,29 +167,35 @@ eleventyNavigation:
 </script>
 
 <!-- ============================================ -->
-<!--                 Partners                    -->
+<!--             Partners Section           -->
 <!-- ============================================ -->
 
-<section id="partners">
+
+<section id="partners" class="section-light py-5">
   <div class="container">
-    <span class="cs-topper">Our Partners</span>
-    <div class="cs-partner-logos">
-      <!-- Logo for MTN -->
-      {% image './src/images/New-mtn-logo-removebg-.png', 'MTN Logo', 'cs-picture cs-partner-logo', 'lazy'%}
-
-      <!-- Logo for Airtel -->
-      {% image './src/images/airtel_logo-removebg-.png', 'Airtel Logo', 'cs-picture cs-partner-logo', 'lazy'%}
-
-      <!-- Logo for GT Bank -->
-      {% image './src/images/guaranty-trust-bank-gtbank-vector-logo-removebg-.png', 'GT Bank Logo', 'cs-picture cs-partner-logo', 'lazy'%}
-
-      <!-- Logo for Uganda Manufacturers Association -->
-      {% image './src/images/unffe.png', 'unffe Logo', 'cs-picture cs-partner-logo', 'lazy'%}
-
-      {% image './src/images/UMA-LOGO-150x150-1.png', 'UMA Logo', 'cs-picture cs-partner-logo', 'lazy'%}
-
-
-
+    <div class="row text-center mb-5">
+      <div class="col">
+        <h2 class="cs-topper">Our Trusted Partners</h2>
+        <p class="cs-text">We're proud to collaborate with leading organizations to make a difference.</p>
+      </div>
+    </div>
+    <div class="row g-5 d-flex align-items-center">
+      <a href="https://www.mtn.com/" target="_blank">
+        {% image './src/images/New-mtn-logo-removebg-.png', 'MTN Logo', 'cs-picture cs-partner-logo', 'lazy'%}      </a>
+     
+      <a href="https://www.gtbank.com/" target="_blank">
+        {% image './src/images/guaranty-trust-bank-gtbank-vector-logo-removebg-.png', 'GT Bank Logo', 'cs-picture cs-partner-logo', 'lazy'%}      </a>
+      <a href="https://www.unffe.org.ug/" target="_blank">
+        {% image './src/images/unffe.png', 'unffe Logo', 'cs-picture cs-partner-logo', 'lazy'%}      </a>
+      <a href="https://www.uma.ug/" target="_blank">
+        {% image './src/images/UMA-LOGO-150x150-1.png', 'UMA Logo', 'cs-picture cs-partner-logo', 'lazy'%}      </a>
+        <a href="https://www.airtel.com/" target="_blank">
+          {% image './src/images/airtel_logo-removebg-.png', 'Airtel Logo', 'cs-picture cs-partner-logo', 'lazy'%}      </a>
     </div>
   </div>
 </section>
+
+
+
+
+
