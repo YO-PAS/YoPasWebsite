@@ -1223,12 +1223,12 @@
   }
   #sbs .cs-text {
     font-size: var(--bodyFontSize);
-    line-height: 1.5em;
+    line-height: 2.0em;
     text-align: left;
     width: 100%;
     max-width: 46.875rem;
     margin: 0 auto;
-    margin-bottom: 1rem;
+    margin-bottom: 4%;
     color: var(--bodyTextColor);
   }
   #sbs .cs-text:last-of-type {
@@ -1660,6 +1660,7 @@
     width: 100%;
     max-width: 40.625rem;
     margin: 0 auto;
+    
     /* 88px - 104px */
     /* margin-bottom: clamp(5.5em, 10.2vw, 6.5em); */
     color: var(--bodyTextColor);
