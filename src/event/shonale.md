@@ -1,7 +1,7 @@
 ---
-pageName: Shonale
-eventTitle: ShoNaLe '24
-titleTag: ShoNaLe '24
+pageName: CBS PEWOSA
+eventTitle: "cbs pewosa trade fair "
+titleTag: "#cbspewosatradefair24"
 eventDescription: "Calling all music enthusiasts! Brace yourselves for an
   unforgettable musical extravaganza! "
 host: Shograph Concepts
@@ -11,7 +11,7 @@ location: Hockey Grounds Lugogo
 eventDate: 2024-01-13T12:38:24.198Z
 tags:
   - post
-image: /images/post/shonale.jpeg
+image: /images/post/cbspewosapalace.jpeg
 imageAlt: Shonale
 TicketLink: https://admin.yopas.co.ug/
 ---
