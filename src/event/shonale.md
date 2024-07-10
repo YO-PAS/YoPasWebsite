@@ -7,7 +7,7 @@ host: CBS PEWOSA Nsindika Njake
 amountInUGX: 5,000 Ugx
 eventTime: 7:00 am - 10pm
 location: Mengo Palace
-eventDate: 2024-03-27T04:00:40.846Z
+eventDate: 2024-03-27T04:00:00.000Z
 tags: []
 image: /images/post/cbspewosapalace.jpeg
 imageAlt: cbspewosatf'24
